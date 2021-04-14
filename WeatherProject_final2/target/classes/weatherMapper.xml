@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.passion.weather.weather.WeatherMapper">
+	<select id="getSeoulDesJson"
+		resultType="com.passion.weather.weather.Weather">
+		select * from seoul_des_s order by w_no
+	</select>
+
+	<select id="getJeonjuDesJson"
+		resultType="com.passion.weather.weather.Weather">
+		select * from jeonju_des_s order by w_no
+	</select>
+
+	<select id="getJejuDesJson"
+		resultType="com.passion.weather.weather.Weather">
+		select * from jeju_des_s order by w_no
+	</select>
+
+	<select id="getIncheonDesJson"
+		resultType="com.passion.weather.weather.Weather">
+		select * from incheon_des_s order by w_no
+	</select>
+
+	<select id="getGwangjuDesJson"
+		resultType="com.passion.weather.weather.Weather">
+		select * from gwangju_des_s order by w_no
+	</select>
+
+	<select id="getGangneungDesJson"
+		resultType="com.passion.weather.weather.Weather">
+		select * from gangneung_des_s order by w_no
+	</select>
+
+	<select id="getDaejeonDesJson"
+		resultType="com.passion.weather.weather.Weather">
+		select * from daejeon_des_s order by w_no
+	</select>
+
+	<select id="getDaeguDesJson"
+		resultType="com.passion.weather.weather.Weather">
+		select * from daegu_des_s order by w_no
+	</select>
+
+	<select id="getCheongjuDesJson"
+		resultType="com.passion.weather.weather.Weather">
+		select * from cheongju_des_s order by w_no
+	</select>
+
+	<select id="getBusanDesJson"
+		resultType="com.passion.weather.weather.Weather">
+		select * from busan_des_s order by w_no
+	</select>
+
+
+
+
+
+
+</mapper>

@@ -1,0 +1,328 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "a";
+	src: url("a.ttf");
+}
+
+/* 메뉴탭 */
+#MenuArea {
+	font-family: "a";
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	width: 100%;
+	height: 130px;
+	padding: 20px;
+	background-color: white;
+}
+
+#MenuButton button {
+	font-size: 14pt;
+	cursor: pointer;
+}
+
+/* 내 위치, 지역 선택 */
+/* 위치 */
+#location {
+	font-size: 20pt;
+	padding: 10px;
+	font-weight: 600;
+}
+
+.dropdownLocation {
+	width: 10%;
+	padding-left: 10px;
+}
+
+.getMyLocation {
+	width: 70%;
+	padding-right: 10px;
+	cursor: pointer;
+}
+/*년도 버튼*/
+#GraphButtonArea {
+	width: 20%;
+	font-size: 16pt;
+	display: table-cell;
+}
+
+#GraphButtonArea button {
+	height: 35px;
+	font-size: 12pt;
+	height: 35px;
+}
+
+#year {
+	margin-right: 15px;
+	font-weight: 600;
+	font-size: 15pt;
+}
+
+/*데이터 Area-----------------------------------------------------*/
+#WeatherTbl {
+	width: 80%;
+	font-family: "a";
+	font-size: 12pt;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 120px;
+}
+
+.dropdownLocation button {
+	font-size: 12pt;
+	cursor: pointer;
+	padding: 5px;
+}
+
+.dropdown-item {
+	font-size: 12pt;
+	text-align: center;
+}
+/*실시간 날씨 테이블*/
+#LiveWeatherTbl {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+
+/*Live 아이콘*/
+#LiveClimateImg {
+	width: 250px;
+	height: 250px;
+}
+
+/*Live 날씨 설명, 온도*/
+#LiveClimateText {
+	font-size: 23pt;
+	font-weight: 600;
+	padding-right: 10px;
+	width: 50%;
+}
+
+#LiveAvgTmpArea {
+	font-size: 23pt;
+	padding-left: 10px;
+	width: 50%;
+}
+
+/*Live 미세먼지 정도/ Live4 : 최저 최고 온도 & pm2.5, pm10 */
+#LiveAqiText {
+	font-size: 14pt;
+	font-weight: 600;
+}
+
+.Live3 {
+	font-size: 13pt;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.Live4 {
+	font-size: 11pt;
+}
+
+/*Live 오존, 아황산가스, 일산화탄소, 이산화질소*/
+.Live5 {
+	font-size: 10pt;
+}
+
+/* 시간별 날씨 테이블----------------------------------------------------*/
+#DailyTimeArea {
+	padding-bottom: 7px;
+}
+
+#DailyTimeTbl {
+	width: 90%;
+	height: 260px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 11pt;
+	background-color: #e0f5fc;
+	border-radius: 15px;
+}
+
+.DailyTimeTbls {
+	background-color: white;
+	padding: 10px;
+	width: 80%;
+	border-radius: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#DailyTimeTr {
+	padding: 10px;
+}
+
+.futureDate {
+	font-size: 11pt;
+	font-weight: 600;
+	text-align: center;
+}
+
+.DailyTimeTd {
+	text-align: center;
+	font-size: 10pt;
+}
+
+/* 요일별 날씨 테이블----------------------------------------------------*/
+.changeTimeBtn{
+   width: 25px;
+   height: 25px;
+   margin-right: 20px;
+   cursor: pointer;
+   visibility: visible;
+}
+
+#DayArea2 {
+	margin-top: 20px;
+}
+
+#DayTblTitle {
+	width: 1000px;
+	font-weight: 600;
+}
+
+#DayTblData {
+	width: 1000px;
+	font-size: 11pt;
+}
+
+/* 타이틀 색 작업 */
+.DayTblTitleTd {
+	background-color: #edfdf1;
+}
+
+#DayTblTitleTd1 {
+	background-color: #ddfbd3;
+}
+
+#DayTblTitleTd2 {
+	background-color: #edfdf1;
+}
+
+#DayTblTitleTd3 {
+	background-color: #ddfbd3;
+}
+
+#DayTblTitleTd4 {
+	background-color: #edfdf1;
+}
+
+#DayTblTitleTd5 {
+	background-color: #ddfbd3;
+}
+
+#DayTblTitleTd6 {
+	background-color: #edfdf1;
+}
+
+/* 이미지 Td 설정 */
+.DayTblIcon {
+	width: 13.5%;
+}
+
+.DayTblIcon img {
+	width: 80px;
+	height: 80px;
+}
+/*날짜 Td설정 */
+#DayTblDate {
+	width: 13%;
+	text-align: center;
+}
+
+#DayTblday {
+	width: 4%;
+	text-align: center;
+}
+
+#DayTblDateDay {
+	width: 17%;
+	text-align: center;
+}
+
+/* 온도 Td설정 */
+.DayTblTemp {
+	width: 9.5%;
+	text-align: center;
+}
+
+/* 강수량 Td설정 */
+.DayTblPop {
+	width: 9%;
+	text-align: center;
+}
+
+/* 일출, 일몰시간 Td설정 */
+.DayTblSun {
+	width: 16%;
+	text-align: center;
+}
+
+/*----------------------- graph ------------------------------------- */
+/*graph1 */
+.graphTbl {
+	margin-top: 30px;
+}
+
+#graph1Title {
+	font-size: 15pt;
+	font-weight: 600;
+	padding-top: 40px;
+}
+
+#graph1Area {
+	width: 70%;
+}
+
+/*graph2 */
+#graph2Title {
+	font-size: 15pt;
+	font-weight: 600;
+	padding-top: 40px;
+}
+
+#graph2Area {
+	width: 70%;
+}
+
+.legend {
+	width: 50%;
+}
+
+/*graph3*/
+#graph3Title {
+	font-size: 15pt;
+	font-weight: 600;
+}
+
+#graph3Area {
+	width: 70%
+}
+
+#graph3Area img {
+	width: 25px;
+	height: 25px;
+	margin-right: 20px;
+	cursor: pointer;
+	visibility: visible;
+}
+
+/* graph4 */
+#Graph4 {
+	margin-top: 50px;
+	width: 60%;
+}
+
+/*copyWrite*/
+#CopyWriteArea {
+	margin-top: 30px;
+	padding-bottom: 20px;
+	font-size: 11pt;
+	color: #424242;
+}
